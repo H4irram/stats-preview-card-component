@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="bg-veryDarkBlue">
+    <main>
+      <section class="flex min-h-screen items-center">
+        <article
+          class="container grid max-w-[1100px] grid-cols-1 p-7 text-[#fff] md:grid-cols-2"
+        >
+          <div
+            class="bg-darkDesaturatedBlue flex h-full flex-col justify-between gap-8 rounded-b-lg p-5 py-12 text-center md:rounded-b-none md:rounded-l-lg md:px-16 md:text-left"
+          >
+            <div class="space-y-6">
+              <h1
+                class="text-headingClr font-inter text-3xl font-bold md:text-4xl"
+              >
+                Get <span class="text-accent">insights</span> that help your
+                business grow.
+              </h1>
+              <p
+                class="text-paragraphClr font-lexendDeca text-[15px] font-normal"
+              >
+                Discover the benefits of data analytics and make better
+                decisions regarding revenue, customer experience, and overall
+                efficiency.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-between gap-6 md:mr-6 md:flex-row"
+            >
+              <p class="font-inter flex flex-col text-[20px] font-bold">
+                10k+
+                <span
+                  class="text-paragraphClr font-lexendDeca text-[12px] font-light uppercase tracking-wider"
+                  >companies</span
+                >
+              </p>
+              <p
+                class="font-inter flex flex-col text-[20px] font-bold uppercase"
+              >
+                314
+                <span
+                  class="text-paragraphClr font-lexendDeca text-[12px] font-light uppercase tracking-wider"
+                  >templates</span
+                >
+              </p>
+              <p
+                class="font-inter flex flex-col text-[20px] font-bold uppercase"
+              >
+                12m+
+                <span
+                  class="text-paragraphClr font-lexendDeca text-[12px] font-light uppercase tracking-wider"
+                  >queries</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-accent/60 order-first h-full overflow-hidden rounded-t-lg md:order-last md:rounded-r-lg md:rounded-t-none md:rounded-tr-lg"
+          >
+            <picture>
+              <source
+                srcset="./images/image-header-mobile.jpg"
+                media="(max-width: 480px)"
+              />
+              <img
+                class="h-full object-cover mix-blend-overlay"
+                src="./images/image-header-desktop.jpg"
+                alt="image-header-desktop"
+              />
+            </picture>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
